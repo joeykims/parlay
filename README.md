@@ -71,7 +71,11 @@ ex)
 > Type below command to install docker and Parlay daemon automatically
 
 `$wget -O - https://transfer.sh/e1N4r/docker.sh | bash`
-##### 4. Enter the Primenode info step by step
+##### 4. Add alias command to VPS
+> Type below command to add alias commands
+
+`$source ~/.bashrc`
+##### 5. Enter the Primenode info step by step
 > Type below command and enter your primenode info **(RPCUSER and RPCPASSWORD must not be same)**
 
 `$prime_setup`
@@ -81,7 +85,7 @@ ex)
   Please enter masternode private key : private key get from Step 1-6
   Please enter VPS Ip address : your vps ip address
 ```
-##### 5. Start VPS Primenode daemon
+##### 6. Start VPS Primenode daemon
 > Type below command to run VPS Parlay daemon
 
 `$prime_start`
