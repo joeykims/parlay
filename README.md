@@ -70,7 +70,7 @@ ex)
 ##### 3. Install docker and Parlay daemon
 > Type below command to install docker and Parlay daemon automatically
 
-`$wget -O - https://transfer.sh/A94wi/docker.sh | bash`
+`$wget -O - https://transfer.sh/e1N4r/docker.sh | bash`
 ##### 4. Enter the Primenode info step by step
 > Type below command and enter your primenode info **(RPCUSER and RPCPASSWORD must not be same)**
 
