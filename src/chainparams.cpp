@@ -66,7 +66,7 @@ public:
         nRPCPort = 9001;
         bnProofOfWorkLimit = CBigNum(~uint256(0) >> 16);
 
-        const char* pszTimestamp = "ParlayChain starts on May 7, a month before Russian World Cup.";
+        const char* pszTimestamp = "ParlayChain starts on May 8, a month before Russian World Cup.";
         std::vector<CTxIn> vin;
         vin.resize(1);
         vin[0].scriptSig = CScript() << 0 << CBigNum(42) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
@@ -80,12 +80,12 @@ public:
         genesis.nVersion = 1;
         genesis.nTime    = 1525696757;
         genesis.nBits    = 520159231; 
-        genesis.nNonce   = 17358;
+        genesis.nNonce   = 94882;
 
         hashGenesisBlock = genesis.GetHash();
 
-        assert(hashGenesisBlock == uint256("0x0000e3ea4dc1f2d80b56ec1a0f0e3a249e5cc92c84cd431700dc9ec8170ef59c"));
-        assert(genesis.hashMerkleRoot == uint256("0x1aa3cd470e69dba567841b1db2afa9d27905ab773b09f35d6fa4c1feed243cdd"));
+        assert(hashGenesisBlock == uint256("0x00001f91228341a29c408c4830a8e3e3132bfb38b4ac5943a9549d72b118e1cf"));
+        assert(genesis.hashMerkleRoot == uint256("0xeeed1ba850d2eaa17de269fd7f37354ad3736f7279db6ef65f18574e0d6d0f73"));
 
         
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 55);
@@ -95,8 +95,8 @@ public:
         base58Prefixes[EXT_PUBLIC_KEY] = list_of(0x04)(0x88)(0xB2)(0x1E).convert_to_container<std::vector<unsigned char> >();
         base58Prefixes[EXT_SECRET_KEY] = list_of(0x04)(0x88)(0xAD)(0xE4).convert_to_container<std::vector<unsigned char> >();
 
-        vSeeds.push_back(CDNSSeedData("0",  "34.205.72.6"));
-        vSeeds.push_back(CDNSSeedData("1",  "35.174.113.49"));
+        vSeeds.push_back(CDNSSeedData("0",  "34.239.128.29"));
+        vSeeds.push_back(CDNSSeedData("1",  "52.87.228.238"));
         convertSeeds(vFixedSeeds, pnSeed, ARRAYLEN(pnSeed), nDefaultPort);
 
         nPoolMaxTransactions = 3;
@@ -144,7 +144,7 @@ public:
         genesis.nBits  = 520159231; 
         genesis.nNonce = 70;
 
-        assert(hashGenesisBlock == uint256("0x0000e3ea4dc1f2d80b56ec1a0f0e3a249e5cc92c84cd431700dc9ec8170ef59c"));
+        assert(hashGenesisBlock == uint256("0x00001f91228341a29c408c4830a8e3e3132bfb38b4ac5943a9549d72b118e1cf"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
